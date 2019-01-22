@@ -14,7 +14,7 @@ import (
 func main() {
 	go http.ListenAndServe("localhost:6060", nil)
 
-	runtimestats.Start("localhost:8127", "sample", 3)
+	s, _ := runtimestats.Start("localhost:8127", "sample", 3)
 
 	time.Sleep(5 * time.Second)
 
@@ -42,4 +42,6 @@ func main() {
 	fmt.Println("Done")
 
 	time.Sleep(10)
+
+	s.Stop()
 }

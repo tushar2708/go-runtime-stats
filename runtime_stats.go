@@ -1,6 +1,7 @@
 package runtimestats
 
 import (
+	"fmt"
 	"gopkg.in/alexcesaro/statsd.v2"
 	"regexp"
 	"strings"
@@ -81,11 +82,12 @@ func (s *RuntimeStats) startStatsPolling() {
 			s.doSend()
 		}
 	}
+	fmt.Println("done")
 }
 
 func (s *RuntimeStats) doSend() {
-	for _, collector := range s.MetricesToColllect {
-		metrics := collector()
+	for _, metrixFunc := range s.MetricesToColllect {
+		metrics := metrixFunc()
 
 		for metricName, metricValue := range metrics {
 			s.statsdClient.Gauge(metricName, metricValue)
