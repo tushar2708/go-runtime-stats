@@ -142,7 +142,7 @@ func Test_Start(t *testing.T) {
 		{
 			name: "default statsd prefix should be set",
 			args: args{
-				statsdHost:   "localhost:8015",
+				statsdHost:   "0.0.0.0:8015",
 				statsDPrefix: "app.app_env",
 				tags:         []string{},
 				interval:     5,
@@ -150,7 +150,7 @@ func Test_Start(t *testing.T) {
 			want: want{
 				err:        nil,
 				matricBase: "app.app_env.runtime.",
-				hostName:   "localhost:8015",
+				hostName:   "0.0.0.0:8015",
 				interval:   time.Duration(5 * time.Second),
 			},
 		},
