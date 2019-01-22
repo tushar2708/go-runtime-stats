@@ -157,8 +157,23 @@ func Test_Start(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got, gotErr := Start(tt.args.statsdHost, tt.args.statsDPrefix, tt.args.interval); !(got.getMetricBase() == tt.want.matricBase && got.PublishInterval == tt.want.interval && got.StatsdHost == tt.want.hostName && gotErr == nil) {
-				t.Errorf("Start() = %v, want %v", got, tt.want)
+
+			got, gotErr := Start(tt.args.statsdHost, tt.args.statsDPrefix, tt.args.interval)
+
+			if !(gotErr == nil) {
+				t.Errorf("gotErr = %v, want = nil", gotErr)
+			}
+
+			if !(got.getMetricBase() == tt.want.matricBase) {
+				t.Errorf("got.getMetricBase() = %v, tt.want.matricBase = %v", got.getMetricBase(), tt.want.matricBase)
+			}
+
+			if !(got.StatsdHost == tt.want.hostName) {
+				t.Errorf("got.StatsdHost = %v, tt.want.hostName = %v", got.StatsdHost, tt.want.hostName)
+			}
+
+			if !(got.PublishInterval == tt.want.interval) {
+				t.Errorf("got.PublishInterval = %v, tt.want.interval = %v", got.PublishInterval, tt.want.interval)
 			}
 		})
 	}
