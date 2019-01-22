@@ -180,6 +180,7 @@ func Test_MemStats(t *testing.T) {
 		"memory.summary.System",
 		"memory.heap.Idle",
 		"memory.heap.InUse",
+		"memory.stack.InUse",
 	}, memStats())
 }
 

@@ -13,6 +13,7 @@ func memStats() map[string]float64 {
 		"memory.summary.System":      float64(m.HeapSys),
 		"memory.heap.Idle":           float64(m.HeapIdle),
 		"memory.heap.InUse":          float64(m.HeapInuse),
+		"memory.stack.InUse":         float64(m.StackInuse),
 	}
 
 	return metrics

@@ -13,9 +13,3 @@ allow_failures:
 
 script:
   - make test
-
-
-
-
-
-
