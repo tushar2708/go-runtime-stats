@@ -1,0 +1,5 @@
+package: github.com/samarudge/go-stats
+import:
+- package: gopkg.in/alexcesaro/statsd.v2
+- package: github.com/stretchr/testify
+  version: v1.1.3
