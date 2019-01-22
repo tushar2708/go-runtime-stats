@@ -11,7 +11,7 @@ install: $(GLIDEBIN)
 test: install
 	go build
 	go test -v ./
-	#gofmt -l ${GOFILES} | read && echo "gofmt failures" && gofmt -d ${GOFILES} && exit 1 || true
+	# gofmt -l ${GOFILES} | read && echo "gofmt failures" && gofmt -d ${GOFILES} && exit 1 || true
 
 notifications:
   email:
