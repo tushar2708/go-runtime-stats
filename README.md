@@ -2,8 +2,9 @@
 
 A tiny library to publish Golang runtime stats to Grafana (with or without InfluxDB tags)
 
-[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
+[![Build Status](https://travis-ci.com/tushar2708/go-runtime-stats.svg?branch=master)](https://travis-ci.com/tushar2708/go-runtime-stats)
 
 Usage;
 

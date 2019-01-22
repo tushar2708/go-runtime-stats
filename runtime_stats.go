@@ -4,6 +4,7 @@ import (
 	"regexp"
 	"strings"
 	"time"
+	"gopkg.in/alexcesaro/statsd.v2"
 )
 
 type metrices []func() map[string]float64
