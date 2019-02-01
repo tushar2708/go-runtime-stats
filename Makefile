@@ -19,11 +19,5 @@ statsd:
 	echo '{ "port": 8125, "mgmt_port": 8126, "backends": [ "./backends/console" ] }' > statsd/config.json
 	node statsd/stats.js statsd/config.json > /dev/null 2>&1 &
 
-notifications:
-	email:
-		on_success: change
-		on_failure: always
-
-
 clean:
 	rm -rf statsd

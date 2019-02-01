@@ -4,7 +4,7 @@ env:
 
 language: go
 
-#os: osx
+os: osx
 
 go:
   - 1.10.x
@@ -21,7 +21,7 @@ allow_failures:
   - go: master
 
 before_script:
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-darwin-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 
