@@ -1,6 +1,7 @@
 package runtimestats
 
 import (
+	"fmt"
 	"gopkg.in/alexcesaro/statsd.v2"
 	"regexp"
 	"strings"
