@@ -3,9 +3,20 @@
 A tiny library to publish Golang runtime stats to Grafana (with or without InfluxDB tags)
 
 
-[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)][![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftushar2708%2Fgo-runtime-stats.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftushar2708%2Fgo-runtime-stats?ref=badge_shield)
-()
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftushar2708%2Fgo-runtime-stats.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftushar2708%2Fgo-runtime-stats?ref=badge_shield)
+
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
+
 [![Build Status](https://travis-ci.com/tushar2708/go-runtime-stats.svg?branch=master)](https://travis-ci.com/tushar2708/go-runtime-stats)
+
+[![HitCount](http://hits.dwyl.io/tushar2708/go-runtime-stats.svg)](http://hits.dwyl.io/tushar2708/go-runtime-stats)
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/9eeb062d61505334f23b/maintainability)](https://codeclimate.com/github/tushar2708/go-runtime-stats/maintainability)
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/9eeb062d61505334f23b/test_coverage)](https://codeclimate.com/github/tushar2708/go-runtime-stats/test_coverage)
+
+[![Known Vulnerabilities](https://snyk.io/test/github/tushar2708/go-runtime-stats/badge.svg)](https://snyk.io/test/github/tushar2708/go-runtime-stats)
+
 
 Usage;
 

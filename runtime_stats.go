@@ -82,7 +82,6 @@ func (s *RuntimeStats) startStatsPolling() {
 			s.doSend()
 		}
 	}
-	fmt.Println("done")
 }
 
 func (s *RuntimeStats) doSend() {
