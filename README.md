@@ -3,6 +3,8 @@
 A tiny library to publish Golang runtime stats to Grafana (with or without InfluxDB tags)
 
 
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftushar2708%2Fgo-runtime-stats.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftushar2708%2Fgo-runtime-stats?ref=badge_shield)
+
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 
 [![Build Status](https://travis-ci.com/tushar2708/go-runtime-stats.svg?branch=master)](https://travis-ci.com/tushar2708/go-runtime-stats)
@@ -45,3 +47,7 @@ Metrics exported;
 | memory.objects.HeapObjects | runtime.ReadMemStats.HeapObjects | Total objects on the heap              | # Objects          |
 | memory.summary.Alloc       | runtime.ReadMemStats.Alloc       | Total bytes allocated                  | bytes              |
 | memory.summary.System      | runtime.ReadMemStats.HeapSys     | Total bytes acquired from system       | bytes              |
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftushar2708%2Fgo-runtime-stats.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftushar2708%2Fgo-runtime-stats?ref=badge_large)
