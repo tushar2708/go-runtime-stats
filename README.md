@@ -9,13 +9,9 @@ A tiny library to publish Golang runtime stats to Grafana (with or without Influ
 
 [![Build Status](https://travis-ci.com/tushar2708/go-runtime-stats.svg?branch=master)](https://travis-ci.com/tushar2708/go-runtime-stats)
 
-[![HitCount](http://hits.dwyl.io/tushar2708/go-runtime-stats.svg)](http://hits.dwyl.io/tushar2708/go-runtime-stats)
-
 [![Maintainability](https://api.codeclimate.com/v1/badges/9eeb062d61505334f23b/maintainability)](https://codeclimate.com/github/tushar2708/go-runtime-stats/maintainability)
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/9eeb062d61505334f23b/test_coverage)](https://codeclimate.com/github/tushar2708/go-runtime-stats/test_coverage)
-
-[![Known Vulnerabilities](https://snyk.io/test/github/tushar2708/go-runtime-stats/badge.svg)](https://snyk.io/test/github/tushar2708/go-runtime-stats)
 
 
 Usage;
